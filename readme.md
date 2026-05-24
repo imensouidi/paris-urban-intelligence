@@ -520,8 +520,6 @@ L’API implémente :
 - endpoints REST analytiques,
 - documentation Swagger automatique.
 
-:contentReference[oaicite:0]{index=0}
-
 ---
 
 # Endpoints disponibles
@@ -540,7 +538,6 @@ L’API implémente :
 | `/traffic-pollution/summary`     | Résumé analytique par zone |
 | `/traffic-pollution/by-level`    | Pollution par niveau de trafic |
 
-:contentReference[oaicite:1]{index=1}
 
 ---
 
@@ -625,7 +622,7 @@ Le dashboard permet :
 - l’analyse des niveaux de trafic,
 - l’exploration des corrélations trafic/pollution.
 
-:contentReference[oaicite:2]{index=2}
+
 
 ---
 
@@ -639,7 +636,6 @@ Le dashboard affiche notamment :
 - l’indice moyen de pollution,
 - la zone la moins polluée.
 
-:contentReference[oaicite:3]{index=3}
 
 ---
 
