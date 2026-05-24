@@ -129,6 +129,11 @@ bigdata-projet/
 │   ├── Dockerfile
 │   └── requirements.txt
 │
+├── logs/
+│   ├── datamart.txt
+│   ├── feeder.txt
+│   └── processor.txt
+│
 ├── pipeline/
 │   ├── feeder.py
 │   ├── processor.py
