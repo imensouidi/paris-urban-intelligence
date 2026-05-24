@@ -663,7 +663,6 @@ Le dashboard affiche notamment :
 - analyse par niveau de trafic,
 - indicateurs météo (température et humidité).
 
-:contentReference[oaicite:4]{index=4}
 
 ---
 
