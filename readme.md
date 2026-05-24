@@ -115,8 +115,6 @@ Dashboard Streamlit
 # 📁 Structure du projet
 
 ```text
-# 📁 Structure du projet
-
 bigdata-projet/
 │
 ├── API/
