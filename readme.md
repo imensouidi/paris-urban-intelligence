@@ -138,7 +138,6 @@ bigdata-projet/
 │
 ├── source/
 │   ├── trafic_routier.csv
-│   └── paris_air_quality.csv
 │
 ├── docker-compose.yml
 ├── hadoop.env
@@ -179,7 +178,28 @@ year=YYYY/month=MM/day=DD
 ---
 
 ## Paramétrage Spark
+Avant l’exécution du pipeline Spark, le fichier CSV contenant les données de trafic routier est d’abord copié dans le conteneur Docker du namenode :
 
+```bash
+docker cp trafic_routier.csv namenode:trafic_routier.csv
+docker exec -it namenode bash
+```
+Connexion ensuite au conteneur namenode :
+```bash
+docker exec -it namenode bash
+```
+Création du répertoire HDFS destiné aux données RAW :
+```bash
+hdfs dfs -mkdir -p /data/raw/traffic
+```
+Copie du fichier CSV dans HDFS :
+```bash
+hdfs dfs -put trafic_routier.csv /data/raw/traffic
+```
+Une fois les données disponibles dans HDFS, connexion au conteneur Spark Master :
+```bash
+docker exec -it spark-master bash
+```
 Le script `feeder.py` est exécuté avec Apache Spark en mode cluster standalone via la commande suivante :
 
 ```bash
@@ -301,6 +321,11 @@ Les données SILVER sont :
 * partitionnées par date d’ingestion.
 
 ## Traitement des données avec Spark
+Connexion au conteneur Spark Master :
+
+```bash
+docker exec -it spark-master bash
+```
 
 Le script `processor.py` est exécuté avec Apache Spark afin de nettoyer, transformer et consolider les données issues de la couche Bronze vers la couche Silver.
 
@@ -386,6 +411,12 @@ gold_db
 
 ##  Création des datamarts analytiques avec Spark
 
+Connexion au conteneur Spark Master :
+
+```bash
+docker exec -it spark-master bash
+```
+
 Le script `datamart.py` est exécuté avec Apache Spark afin de générer les tables analytiques de la couche Gold à partir des données Silver stockées dans Hive.
 
 ```bash
@@ -422,6 +453,59 @@ Cette étape permet :
 
 Exposer les datamarts analytiques via une API REST sécurisée afin de permettre l’accès aux données de trafic et de pollution.
 
+---
+
+# Construction de l’image Docker
+
+Depuis le dossier racine du projet :
+
+```bash
+docker build -t bigdata-api ./API
+```
+
+---
+
+# Lancement du conteneur API
+
+```bash
+docker run -d \
+--name bigdata-api \
+--network bigdata-projet_default \
+-p 8000:8000 \
+bigdata-api
+```
+
+---
+
+# Vérification du conteneur
+
+```bash
+docker ps
+```
+
+---
+
+# Accès au conteneur API
+
+```bash
+docker exec -it bigdata-api bash
+```
+
+---
+
+# Lancement de FastAPI
+
+```bash
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+---
+
+# URL de l’API
+
+```text
+http://localhost:8000
+```
 ---
 
 # Fonctionnalités de l’API
@@ -491,6 +575,45 @@ http://localhost:8000/docs
 Visualiser les datamarts analytiques à travers un dashboard interactif dédié à l’analyse du trafic routier et de la qualité de l’air à Paris.
 
 ---
+
+# Construction de l’image Docker
+
+Depuis le dossier racine du projet :
+
+```bash
+docker build -t bigdata-dashboard ./dashboard
+```
+
+---
+
+# Lancement du conteneur Dashboard
+
+```bash
+docker run -d \
+--name bigdata-dashboard \
+--network bigdata-projet_default \
+-p 8501:8501 \
+bigdata-dashboard
+```
+
+---
+
+# Vérification du conteneur
+
+```bash
+docker ps
+```
+
+---
+
+# Accès au conteneur Dashboard
+
+```bash
+docker exec -it bigdata-dashboard bash
+```
+
+---
+
 
 # Fonctionnalités du dashboard
 
