@@ -10,13 +10,6 @@ __pycache__/
 API/.env
 dashboard/.env
 
-# =========================
-# LOGS
-# =========================
-*.log
-processor.txt
-feeder.txt
-datamart.txt
 
 # =========================
 # SPARK / HIVE

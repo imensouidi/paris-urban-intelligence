@@ -1,0 +1,88 @@
+2026-05-23 22:04:29,603 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:07:59,473 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:08:07,115 INFO Spark session created successfully
+2026-05-23 22:08:07,116 INFO Reading silver table from Hive
+2026-05-23 22:12:19,852 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:12:26,253 INFO Spark session created successfully
+2026-05-23 22:12:26,257 INFO Reading silver table from Hive
+2026-05-23 22:17:37,781 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:17:44,892 INFO Spark session created successfully
+2026-05-23 22:17:44,897 INFO Reading silver table from Hive
+2026-05-23 22:23:29,645 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:23:37,527 INFO Spark session created successfully
+2026-05-23 22:23:37,529 INFO Reading silver table from Hive
+2026-05-23 22:26:47,461 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:26:55,146 INFO Spark session created successfully
+2026-05-23 22:26:55,147 INFO Reading silver table from Hive
+2026-05-23 22:29:27,658 INFO Error while receiving.
+2026-05-23 22:44:22,426 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:44:26,338 INFO Spark session created successfully
+2026-05-23 22:44:26,340 INFO Reading silver table from Hive
+2026-05-23 22:48:17,475 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:48:21,614 INFO Spark session created successfully
+2026-05-23 22:48:21,615 INFO Reading silver table from Hive
+2026-05-23 22:52:59,242 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 22:53:03,527 INFO Spark session created successfully
+2026-05-23 22:53:03,528 INFO Reading silver table from Hive
+2026-05-23 23:35:34,874 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:35:40,265 INFO Spark session created successfully
+2026-05-23 23:35:40,267 INFO Reading silver table from Hive
+2026-05-23 23:38:31,591 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:38:38,847 INFO Spark session created successfully
+2026-05-23 23:38:38,849 INFO Reading silver table from Hive
+2026-05-23 23:40:01,045 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:40:11,094 INFO Spark session created successfully
+2026-05-23 23:40:11,099 INFO Reading silver table from Hive
+2026-05-23 23:42:31,596 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:42:41,892 INFO Spark session created successfully
+2026-05-23 23:42:41,894 INFO Reading silver table from Hive
+2026-05-23 23:44:32,441 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:44:44,674 INFO Spark session created successfully
+2026-05-23 23:44:44,679 INFO Reading silver table from Hive
+2026-05-23 23:46:22,706 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:46:32,430 INFO Spark session created successfully
+2026-05-23 23:46:32,432 INFO Reading silver table from Hive
+2026-05-23 23:50:23,769 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:50:41,329 INFO Spark session created successfully
+2026-05-23 23:50:41,336 INFO Reading silver table from Hive
+2026-05-23 23:54:08,495 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:54:19,297 INFO Spark session created successfully
+2026-05-23 23:54:19,298 INFO Reading silver table from Hive
+2026-05-23 23:56:40,039 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:56:47,563 INFO Spark session created successfully
+2026-05-23 23:56:47,564 INFO Reading silver table from Hive
+2026-05-23 23:58:26,000 INFO ========== DATAMART JOB STARTED ==========
+2026-05-23 23:58:37,266 INFO Spark session created successfully
+2026-05-23 23:58:37,276 INFO Reading silver table from Hive
+2026-05-24 00:00:54,078 INFO ========== DATAMART JOB STARTED ==========
+2026-05-24 00:01:00,931 INFO Spark session created successfully
+2026-05-24 00:01:00,936 INFO Reading silver table from Hive
+2026-05-24 00:03:10,832 INFO ========== DATAMART JOB STARTED ==========
+2026-05-24 00:03:17,145 INFO Spark session created successfully
+2026-05-24 00:03:17,147 INFO Reading silver table from Hive
+2026-05-24 00:06:40,943 INFO ========== DATAMART JOB STARTED ==========
+2026-05-24 00:06:46,590 INFO Spark session created successfully
+2026-05-24 00:06:46,591 INFO Reading silver table from Hive
+2026-05-24 00:07:17,733 INFO Silver dataframe cached : 6543242 rows
+2026-05-24 00:07:17,751 INFO Creating pollution datamart
+2026-05-24 00:07:21,805 INFO Writing datamart_pollution to MySQL
+2026-05-24 00:07:23,349 INFO Spark session stopped
+2026-05-24 00:10:03,801 INFO ========== DATAMART JOB STARTED ==========
+2026-05-24 00:10:09,147 INFO Spark session created successfully
+2026-05-24 00:10:09,147 INFO Reading silver table from Hive
+2026-05-24 00:10:37,325 INFO Silver dataframe cached : 6543242 rows
+2026-05-24 00:10:37,332 INFO Creating pollution datamart
+2026-05-24 00:10:41,519 INFO Writing datamart_pollution to MySQL
+2026-05-24 00:10:47,397 INFO datamart_pollution written successfully
+2026-05-24 00:10:47,413 INFO Pollution datamart done
+2026-05-24 00:10:47,413 INFO Creating traffic datamart
+2026-05-24 00:11:07,087 INFO Writing datamart_traffic to MySQL
+2026-05-24 00:11:16,362 INFO datamart_traffic written successfully
+2026-05-24 00:11:16,367 INFO Traffic datamart done
+2026-05-24 00:11:16,367 INFO Creating traffic pollution datamart
+2026-05-24 00:11:20,063 INFO Writing datamart_traffic_pollution to MySQL
+2026-05-24 00:11:23,531 INFO datamart_traffic_pollution written successfully
+2026-05-24 00:11:23,537 INFO Traffic pollution datamart done
+2026-05-24 00:11:23,586 INFO Cache removed successfully
+2026-05-24 00:11:23,586 INFO ========== DATAMART JOB COMPLETED ==========
+2026-05-24 00:11:24,100 INFO Spark session stopped

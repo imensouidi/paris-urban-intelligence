@@ -1,0 +1,54 @@
+2026-05-23 15:39:26,875 INFO ========== FEEDER JOB STARTED ==========
+2026-05-23 15:39:31,730 INFO Spark session created successfully
+2026-05-23 15:39:31,730 INFO Reading traffic CSV
+2026-05-23 15:39:45,811 INFO Traffic CSV loaded successfully
+2026-05-23 15:39:45,811 INFO Reading air quality data from MySQL
+2026-05-23 15:39:46,837 INFO Air quality data loaded successfully
+2026-05-23 15:39:47,224 INFO Partition columns added successfully
+2026-05-23 15:39:47,224 INFO Caching traffic dataframe
+2026-05-23 15:39:52,588 INFO Traffic dataframe cached successfully
+2026-05-23 15:40:15,785 INFO Traffic rows : 214416
+2026-05-23 15:40:15,795 INFO Air quality rows : 120000
+2026-05-23 15:40:25,807 INFO Writing traffic RAW data
+2026-05-23 15:42:25,392 INFO Traffic RAW data written successfully
+2026-05-23 15:42:25,397 INFO Writing air quality RAW data
+2026-05-23 15:48:52,559 INFO ========== FEEDER JOB STARTED ==========
+2026-05-23 15:49:02,304 INFO Spark session created successfully
+2026-05-23 15:49:02,305 INFO Reading traffic CSV
+2026-05-23 15:49:12,129 INFO Traffic CSV loaded successfully
+2026-05-23 15:49:12,129 INFO Reading air quality data from MySQL
+2026-05-23 15:49:13,105 INFO Air quality data loaded successfully
+2026-05-23 15:49:13,293 INFO Partition columns added successfully
+2026-05-23 15:49:13,293 INFO Caching traffic dataframe
+2026-05-23 15:49:23,317 INFO Traffic dataframe cached successfully
+2026-05-23 15:49:24,467 INFO Traffic rows : 214416
+2026-05-23 15:49:24,468 INFO Air quality rows : 120000
+2026-05-23 15:49:34,477 INFO Writing traffic RAW data
+2026-05-23 15:49:45,659 INFO Traffic RAW data written successfully
+2026-05-23 15:49:45,666 INFO Writing air quality RAW data
+2026-05-23 15:49:50,399 INFO Air quality RAW data written successfully
+2026-05-23 15:49:50,490 INFO traffic_df2 unpersisted successfully
+2026-05-23 17:47:15,542 INFO Spark session stopped
+2026-05-23 17:48:08,813 INFO ========== FEEDER JOB STARTED ==========
+2026-05-23 17:48:13,677 INFO Spark session created successfully
+2026-05-23 17:48:13,679 INFO Reading traffic CSV
+2026-05-23 17:55:49,153 INFO ========== FEEDER JOB STARTED ==========
+2026-05-23 17:55:54,670 INFO Spark session created successfully
+2026-05-23 17:55:54,670 INFO Reading traffic CSV
+2026-05-23 17:56:05,277 INFO Traffic CSV loaded successfully
+2026-05-23 17:56:05,278 INFO Reading air quality data from MySQL
+2026-05-23 17:56:06,696 INFO Air quality data loaded successfully
+2026-05-23 17:56:07,031 INFO Partition columns added successfully
+2026-05-23 17:56:07,031 INFO Caching traffic dataframe
+2026-05-23 17:58:56,063 INFO ========== FEEDER JOB STARTED ==========
+2026-05-23 17:59:01,667 INFO Spark session created successfully
+2026-05-23 17:59:01,667 INFO Reading traffic CSV
+2026-05-23 17:59:10,908 INFO Traffic CSV loaded successfully
+2026-05-23 17:59:10,908 INFO Reading air quality data from MySQL
+2026-05-23 17:59:11,767 INFO Air quality data loaded successfully
+2026-05-23 17:59:12,024 INFO Partition columns added successfully
+2026-05-23 17:59:12,028 INFO Caching traffic dataframe
+2026-05-23 17:59:22,154 INFO Traffic dataframe cached successfully
+2026-05-23 17:59:23,956 INFO Traffic rows : 214416
+2026-05-23 17:59:23,959 INFO Air quality rows : 120000
+2026-05-23 17:59:33,974 INFO Writing traffic RAW data
