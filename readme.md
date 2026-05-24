@@ -182,7 +182,6 @@ Avant l’exécution du pipeline Spark, le fichier CSV contenant les données de
 
 ```bash
 docker cp trafic_routier.csv namenode:trafic_routier.csv
-docker exec -it namenode bash
 ```
 Connexion ensuite au conteneur namenode :
 ```bash
